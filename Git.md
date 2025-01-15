@@ -75,3 +75,41 @@ No remote backups (loss of data if the machine fails).
  * Initial learning curve for new users.
  * Larger storage requirements (complete history on every machine).
   
+## `What is Git ?`
+  Git is a distributed version control system (VCS) that allows multiple developers to work on a project simultaneously without interfacing with each others changes.
+  
+  * It tracks changes in the source code during software development , allowing developers to revert to previous states, track changes and collaborate effectively .
+
+  ### `History of GIT :`
+  1973 : SCCM (Source Code Control System) 1 file
+         RCM (Revision Control System) n files , 1 directory
+         CVS (Concurrent Versions System) n files , n directories , 1 user
+  
+  2000 : SVN (Sub Version ) n files , n directories , n users
+
+  2005 : GIT (Global Information Tracker)
+  ### `Advantages of Git :`
+  * It is Platform Independent
+  * Free & Open Source 
+  * ` Distributed Nature :` Every developers has a full copy of the entire repository , including the entire history of all the changes 
+  * `Performance :` Git is designed to be fast , handling large projects effectively .
+
+  ### `Understand GIT :`
+  **Scenario :** Developing a website
+  
+  **1 . Start a Project :** Avinash and Anudeep are working together to develop a new website 
+  
+  2 . **Initial Setup :** Avinash creates the project's initial files and uses git to track these changes .
+  
+  3 . **Concurrent Work :** Anudeep adds a new feature while avinash fixes a bug , both using separate branches
+
+  4 . **Merge Changes :** They merge their changes back into the main branch without losing each other's work
+
+  5 . **History tracking and Revert :** They can revert to previous versions if any new changes introduce issues.
+
+  ### `Commands :`
+  * which git : It shows the whether the git is present or not
+  * yum install git : To install git
+  * git init : to initalize the git
+  * git --version : it gives the version of the git
+  
