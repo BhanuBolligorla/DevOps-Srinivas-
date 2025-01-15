@@ -1,4 +1,4 @@
-Bhanu sree
+
 
 ## `Why do we need Version Control?`
   * For collaboration
@@ -120,3 +120,26 @@ No remote backups (loss of data if the machine fails).
   * **git config --global --edit :** It edit / modify the configuring data 
              
       * all this config information is stored in git config in root user
+
+## `Git Terminology :` 
+### **Repository :** 
+A Repository is a storage location where your project's code , files and history are kept
+ * Repository can be local (on your computer) or remote (on a service like github)
+
+## **Local Repository :** 
+ * **Description :** A Local Repository is stored on your local machine .
+   
+   * It contains the project's files and the complete history of all changes .
+* **Usage:** Used for development and testing before changes are shared with others
+
+## **Central Repository:**
+* **Description :** A Central Repository is a designated repository that serves as the main hub for collaboration.
+  
+  * It is authoritative source of truth for the project , where all the changes are eventually integrated.
+* **Usage:** Typically used in centralized work flows where developers push their changes to  and pull updates frommthis central point.
+
+## **Remote Repository:**
+* **Description :** A Remote Repository is any repository that is not on your local machine .
+  * It can be central repository or any other repository that you interact with over a network.
+
+**Clone:** 
