@@ -108,8 +108,15 @@ No remote backups (loss of data if the machine fails).
   5 . **History tracking and Revert :** They can revert to previous versions if any new changes introduce issues.
 
   ### `Commands :`
-  * which git : It shows the whether the git is present or not
-  * yum install git : To install git
-  * git init : to initalize the git
-  * git --version : it gives the version of the git
-  
+  * **which git :** It shows the whether the git is present or not
+  * **yum install git :** To install git
+  * **git init :** to initalize the git
+  * **git --version :** it gives the version of the git
+  * **git config --global user.name "Bhanu" :** to change username or to give username
+  * **git config --global user.email "bhanu4bolligorla@gmail.com" :** to change email id or to give email id
+  * **git config --global core.editor "vim" :** It takes vim editor defaultly to edit / modify the data in files
+  * **git config --global help.autocorrect 1 :** It is set to auto correct
+  * **git config --list :** It displays the what we have config
+  * **git config --global --edit :** It edit / modify the configuring data 
+             
+      * all this config information is stored in git config in root user
