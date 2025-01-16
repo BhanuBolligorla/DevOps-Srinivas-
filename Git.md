@@ -142,4 +142,44 @@ A Repository is a storage location where your project's code , files and history
 * **Description :** A Remote Repository is any repository that is not on your local machine .
   * It can be central repository or any other repository that you interact with over a network.
 
-**Clone:** 
+**Clone:**
+    Cloning a repository means making a local copy of a remote repository on your computer.
+    
+  * This allows you to work on the project locally,make changes and later synchronize those changes back to the remote repository.
+
+  **add :**  adding files means staging them for the next commit.
+
+  * This tells git which files you want to include in your next snapshot of the repository.
+  * The command git add <file> or git add . (to add all files) is used for this.
+
+  **Commit:** Commiting is saving a snapshot your staged changes to the repository's history.
+
+  * This creates a new revision of the project,which includes all the changes you;ve added.
+
+  **Push:** Pushing means sending your committed changes from your local repository to a remote repository.
+
+  * This updates the remote repository with your latest commits,allowing others to access your changes.  
+### `Git Stages :`
+ ![preview](images/stages.PNG)
+ 
+ **Commands:**
+
+*  **git log :** It displays the information about the history of commits
+* **git log --oneline:** It displays the information about the history of commands and give first seven characters in the commit id
+* **git show e718265 :** It displays the information about the specific commit.
+* **git diff a6745bd..e71ca59 :** It displays the difference between those two commits
+* **git log --oneline --author:** It displays the information about commits of specific developer 
+* **git ignore :** It ignores the formats of the file.
+    
+      touch .gitignore : We need to store the data of extensions that what we need to ignore in this file 
+* **git remote add origin https://github.com username/repository-name.git (add the github repository as a remote)
+ 
+  * **git remote:** This is the git command used to manage remote connections.
+
+  * Remotes are versions of your project that are hosted on the internet or another network 
+
+   * **add:** The add keyword is used to add a new remote connection to your local git repository
+   * **Origin:** origin is a conventionally used name for the primary remote repository . you can name it anything , but origin is the default name most developers use.
+
+ * **git push -u origin master:** to push the files from local repository to github
+  
