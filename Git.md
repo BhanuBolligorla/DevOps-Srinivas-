@@ -160,7 +160,7 @@ A Repository is a storage location where your project's code , files and history
 
   * This updates the remote repository with your latest commits,allowing others to access your changes.  
 ### `Git Stages :`
- ![preview](images/stages.PNG)
+ ![preview](Images/stages.PNG)
  
  **Commands:**
 
@@ -172,7 +172,7 @@ A Repository is a storage location where your project's code , files and history
 * **git ignore :** It ignores the formats of the file.
     
       touch .gitignore : We need to store the data of extensions that what we need to ignore in this file 
-* **git remote add origin https://github.com username/repository-name.git (add the github repository as a remote)
+* **git remote add origin https://github.com username/repository-name.git (add the github repository as a remote)**
  
   * **git remote:** This is the git command used to manage remote connections.
 
@@ -182,4 +182,3 @@ A Repository is a storage location where your project's code , files and history
    * **Origin:** origin is a conventionally used name for the primary remote repository . you can name it anything , but origin is the default name most developers use.
 
  * **git push -u origin master:** to push the files from local repository to github
-  
