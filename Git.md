@@ -262,4 +262,30 @@ Join two or more development histories together .
  In github, a fork is a copy of repository that allows users to move changes without affecting the original project.
 
  **git rm --cached <file name> :** This command is used to remove files from the staging area without deleting them from the working directory
- 
+ **git rm --force <filename> :** This command is used to forcibly remove files from both the staging area and working directory
+ **git commit -am "msg" :** It ommits and add the files at a time (existed files only)
+ **git clone -b branch_name "url" :** to clone from specific branch
+ **git push origin --set-upstream origin test :** to push after creation of branch
+
+ ## `git restore :` 
+ restore specified paths in the working tree with some contents from a restore source. If a path is tracked but does not exist in the restore source , it will be removed to match the source
+  
+  * **Syntax :**  git restore --staged file-name
+
+## `git revert :`
+  to come back from the local repository to staging area
+
+   * **Syntax:** git revert commit-id
+             
+        (or)
+
+        git revert commitid commitid
+
+  ## `Pull requests :`
+  When merging pull requests you can allow any combination of merge commits , squashing or rebasing . At least one option must be enabled . If you have linear history enabled on any protected branch , you must enable squashing or rebasing .
+
+  **Changing a commit message (Amend):** 
+  If a commit message contains unclear , incorrect or sensitive information , you can ammend it locally and push a new commit with a new message to github . You can also change a commit msg to add missing information .
+
+  * **Syntax:** git commit --amend -m "new msg"
+
