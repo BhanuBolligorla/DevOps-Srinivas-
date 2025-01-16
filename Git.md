@@ -182,3 +182,84 @@ A Repository is a storage location where your project's code , files and history
    * **Origin:** origin is a conventionally used name for the primary remote repository . you can name it anything , but origin is the default name most developers use.
 
  * **git push -u origin master:** to push the files from local repository to github
+
+ When we clone the very first time an empty repository,we will be having 2 folders
+    1. .git
+    2. readme
+
+ `Generate a token :`
+ Settings - developer settings - tokens(classic) - generate new token - generate new token (classic) - Select first five packages or all - click on generte token
+
+ ## `Branches :`  
+  Branches help you manage different versions of your project and work on multiple developments simultaneously without affecting the main or other branches
+
+  * **git branch :**  It displays the list of branches which we have
+  * **git branch branch_name :** It creates the new branch
+  * **git checkout branch_name (or) git switch branch_name :** to switch the branch
+  * **git checkout -b branch_name :** to switch and create the branch
+  * **git branch -d branch_name :** to delete the branch in local repository
+  * **git push origin --delete branch_name :** it will delete the branch in remote repository after deleting in local repository
+  
+  **How can we rename a branch name ?** 
+  Go for the settings inside a repository and scroll down there we can have an option called Default branch , there we can change our branch name
+
+## `Merge :` 
+Join two or more development histories together .
+   
+  A --- B --- C (test branch)
+   
+   |
+   
+   D --- E --- F --- G (Master branch) 
+
+**Difference between clone and pull :**
+
+* Purpose :
+
+   * Clone : Creates a copy of the entire repository locally 
+
+   * Pull   : Updates an existing local repository
+
+* When used :
+
+   * Clone : When starting to work on a repository for the first time
+   * Pull : to sync changes from the remote repository
+
+* Scope :
+
+   * Clone : Copies all branches, files and commit history
+   * Pull : updates only the current branch 
+
+* Effect : 
+
+   * Clone : Creates a new directory and initializes a new local repository
+   * Pull : Merge all the changes into the current repository
+
+* Example :
+
+   * Clone : git clone <url>
+   * Pull : git pull origin main
+
+
+## **Fetch :** 
+ Downloads changes from the remote repository but does not merge them into your local branch. It updates your local tracking branches .
+
+ ## **What is git stash ?**
+  Git stash is a command that allows you to temporarily save changes in your working directory without committing them .
+
+* It essentially "stashes" your uncommitted changes away , allowing you to switch branches or perform other tasks without losing your work. Later , you can "unstash" these changes and continue working .
+* **git stash :** Save your local modifications (staging and working directory ) to a new stash
+* **git stash list :** View the list of stashed changes
+* **git stash pop :** Apply the most recent stash and remove it from the stash list
+* **git stash apply :** apply the most recent stash to working directory without removing it from stash list
+* **git stash apply {n} :** apply the specific stash from stash list
+* **git stash clear :** remove all stashes from the stash list
+
+## **What is github ? and how it defers from git ?**
+ Git is a version control system that lets you manage and keep track of your source code history . Github is a cloud-based hosting service that lets you manage git repositories
+
+ ## **What is fork ?**
+ In github, a fork is a copy of repository that allows users to move changes without affecting the original project.
+
+ **git rm --cached <file name> :** This command is used to remove files from the staging area without deleting them from the working directory
+ 
