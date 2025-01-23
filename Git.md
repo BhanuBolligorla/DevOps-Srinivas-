@@ -109,16 +109,34 @@ No remote backups (loss of data if the machine fails).
 
   ### `Commands :`
   * **which git :** It shows the whether the git is present or not
+  
+   ![preview](Images/git.1.PNG)
   * **yum install git :** To install git
   * **git init :** to initalize the git
+
+   ![preview](Images/git.2.PNG)
+  
   * **git --version :** it gives the version of the git
+
+  ![preview](Images/git.3.PNG)
   * **git config --global user.name "Bhanu" :** to change username or to give username
+  
+  ![preview](Images/git.4.PNG)
   * **git config --global user.email "bhanu4bolligorla@gmail.com" :** to change email id or to give email id
+  
+  ![preview](Images/git.5.PNG)
   * **git config --global core.editor "vim" :** It takes vim editor defaultly to edit / modify the data in files
+  
+  ![preview](Images/git.6.PNG)
   * **git config --global help.autocorrect 1 :** It is set to auto correct
+  
+![preview](Images/git.7.PNG)
   * **git config --list :** It displays the what we have config
+  
+  ![preview](Images/git.8.PNG)
   * **git config --global --edit :** It edit / modify the configuring data 
-             
+     ![preview](Images/git.10.PNG)
+     ![preview](Images/git.9.PNG)        
       * all this config information is stored in git config in root user
 
 ## `Git Terminology :` 
