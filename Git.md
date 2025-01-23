@@ -183,9 +183,16 @@ A Repository is a storage location where your project's code , files and history
  **Commands:**
 
 *  **git log :** It displays the information about the history of commits
+
+![preview](Images/git.11.PNG)
 * **git log --oneline:** It displays the information about the history of commands and give first seven characters in the commit id
+
+![preview](Images/git.12.PNG)
 * **git show e718265 :** It displays the information about the specific commit.
+![preview](Images/git.13.PNG)
+
 * **git diff a6745bd..e71ca59 :** It displays the difference between those two commits
+![preview](Images/git.14.PNG)
 * **git log --oneline --author:** It displays the information about commits of specific developer 
 * **git ignore :** It ignores the formats of the file.
     
