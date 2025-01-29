@@ -99,3 +99,19 @@ There are 3 built in built life cycles
     * `Syntax:` mvn validate
 * `Compile :` Compiles the source code of the project.
    * `Syntax:`  mvn compile
+* `Test :`  Runs unit tests on the compiled source code using testing frameworks like JUnit.
+  * `Syntax:`  mvn test
+* `Package :` Packages the compiled code into a deployable format (e.g., JAR, WAR, EAR).
+  *  `Syntax:`  mvn package
+
+* `Integration test :` process and deploy the package into an environment where integration tests can be run
+  * `Syntax:`  mvn integration-test
+* verify: Verifies that the packaged code meets the quality criteria 
+  * `Syntax:`  mvn verify
+
+* `install:` Installs the packaged code into the local Maven repository, making it available for other projects on the same machine.
+  * `Syntax:`  mvn install
+* `deploy :` deploy: Deploys the packaged code to a remote repository (eg: Maven Central or a private repository) for sharing with other developers or applications.
+  * `Syntax:`  mvn deploy
+
+ 
