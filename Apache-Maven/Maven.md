@@ -53,6 +53,7 @@
 
 
 
+
 * `Plugins:` Plugins are used to perform specific tasks 
       
      - eg: compiling code, running tests, packaging applications,They are configured in the pom.xml.
@@ -77,3 +78,24 @@
 5. It allows you to set up different environments (like development and production) easily.
 
 6. Maven manages versions of dependencies and project releases.
+
+## `Maven Build Life Cycle :`
+
+* In Maven , the build is run using a predefined and ordered set of steps to call the build life-cycle
+* The build tasks that will be performed during each phase are determined by the configuration in the project file and in particular the selected packaging.
+* Maven relies on build lefecycles to define the process of building and distributing artifacts (eg: Jar files , war files)
+
+### `Built-in Built Lifecycles :`
+There are 3 built in built life cycles 
+
+* `Default :` Manages the build and deployment process of the project.
+ 
+* `Clean :` Handles project cleaning.
+* `Site :` Generates project documentation and reports.
+
+## `Maven Lifecycle Phases :`
+ There are 8 phases in maven life cycle
+  * `validate :` Check if the project is correct , having all the necessary information .
+    * `Syntax:` mvn validate
+* `Compile :` Compiles the source code of the project.
+   * `Syntax:`  mvn compile
