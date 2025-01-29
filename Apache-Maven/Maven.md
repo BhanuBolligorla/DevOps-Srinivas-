@@ -114,4 +114,82 @@ There are 3 built in built life cycles
 * `deploy :` deploy: Deploys the packaged code to a remote repository (eg: Maven Central or a private repository) for sharing with other developers or applications.
   * `Syntax:`  mvn deploy
 
+ ### `Maven Architecture :` 
+  - Remote repository is reffering to organisation level
+
+   - local repository is reffering to local machine (window's)
+
+   - central repository is reffering to apache maven
+
+### `Maven Artifact :`
+  
+ - Maven artifact is file such as war,jar,ear files used by a Maven project.
+
+  - Maven artifacts are stored in repositories,so they can be used as dependencies by other projects
+
+  - Maven artifacts are identified by three components 
+
+       1. group ID: A unique identifier for the group or organization
+
+      2. Artifact ID: A unique identifier for the artifact within the group. 
+
+      3. version : also called artifact co-ordinates
+
+## Maven Repository Flow :
+
+  **Step 1:** When developer executes mvn command, it will go and check in local repository. If found the dependencies and plugins in the local repository, developer will get the artifact.
+
+  **Step 2:** If not found it in local repository from developer machine, it will go and search in remote repository.
+
+  **Step 3:** From remote repository, required dependency or plugins will get stored in local repository.
+
+  **Step 4:** From local repository, developer will get the artifact.
+ 
+## Project Object Model (POM):
+
+   - Pom is short
+
+   - XML file located at the root of the project (pom.xml)
+
+   - It includes configuration for your project, including :
+
+        1. Information about the project
+
+        2. Configuration details to build the project
+
+        3. Contains default values for most of the projects
+
+           eg: source directory, target directory
+
+       4. Dependencies of the project
+
+       5. Configuration about plugins and goals
+
+* Declaring Dependencies :
+ 
+   - while declaring the dependencies , co-ordinates of the artifacts must be provided
+
+    such as : group id , artifact id, version
+
+
+
+## pre-requasites : 
+
+   1. JDK (Java Development Kit) installed.
+
+   2. Maven installed on your system.
+
+   3. Set MAVEN_HOME and update the PATH environment variable.
+
+   4. Internet access for downloading dependencies.
+
+
+
+
+## What is .m2 folder ..?
+
+   - The .m2 folder is Maven's local repository where it stores downloaded dependencies and plugins. It helps avoid re-downloading artifacts each time you build a project.
+     
+  - It's located in your home directory (eg : ~/.m2)
+
  
