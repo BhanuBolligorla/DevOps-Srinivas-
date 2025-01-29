@@ -91,3 +91,10 @@ There are 3 built in built life cycles
  
 * `Clean :` Handles project cleaning.
 * `Site :` Generates project documentation and reports.
+
+## `Maven Lifecycle Phases :`
+ There are 8 phases in maven life cycle
+  * `validate :` Check if the project is correct , having all the necessary information .
+    * `Syntax:` mvn validate
+* `Compile :` Compiles the source code of the project.
+   * `Syntax:`  mvn compile
