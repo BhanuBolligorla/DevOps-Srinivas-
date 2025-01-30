@@ -46,10 +46,10 @@
 
 
 
-* `Build Lifecycle`: A series of phases 
-  - eg: clean, compile, test, package, install, deploy .
+* ` Build Lifecycle Phases`: A series of phases 
+  - eg: Validate , Compile , Test , Package , Integration - test , Verify , Install , deploy
 
-  - these are define the process of building, testing, and packaging the project.
+  - These are define the process of building, testing, and packaging the project.
 
 
 
@@ -85,7 +85,7 @@
 * The build tasks that will be performed during each phase are determined by the configuration in the project file and in particular the selected packaging.
 * Maven relies on build lefecycles to define the process of building and distributing artifacts (eg: Jar files , war files)
 
-### `Built-in Built Lifecycles :`
+### `Built-in Build Lifecycles :`
 There are 3 built in built life cycles 
 
 * `Default :` Manages the build and deployment process of the project.
