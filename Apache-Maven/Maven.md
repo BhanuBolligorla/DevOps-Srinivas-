@@ -60,7 +60,7 @@
 
 
 
-* `Goal `: Maven goal is an individual task that Maven executes during the build process.
+* `Goal:` Maven goal is an individual task that Maven executes during the build process.
 
   - Each goal is typically associated with a plugin such as compiling code, running tests,packaging the application.
  
