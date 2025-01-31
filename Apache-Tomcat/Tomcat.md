@@ -51,4 +51,4 @@
 
 Apache Tomcat --> logs (Apache Tomcat and also application which is running inside Tomcat)
 
-* We can access tomcat using local host :8080 or else 127.0.0.1:8080
+* We can access tomcat using localhost :8080 or else 127.0.0.1:8080
