@@ -3,7 +3,7 @@
 
  ## `Prerequisites :`
   * Java JRE installed and configured 
-  * O.server
+  * O.S
   * Network
   * Administration Privillage
 
