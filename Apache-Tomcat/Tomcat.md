@@ -1,5 +1,5 @@
 # `Apache Tomcat :`
- apache Tomcat is an open - source web-server and servlet container for java code .
+ Apache Tomcat is an open - source web-server and servlet container for java code .
 
  ## `Prerequisites :`
   * Java JRE installed and configured 
@@ -27,7 +27,7 @@
    
       redirect port = "8443"/>
     
-    Change the connector port number to any number between 1024 and 655535 .
+    Change the connector port number to any number between 1024 and 65535 .
 
 `How to start and stop the Apache Tomcat ?`
  
@@ -37,7 +37,7 @@
 
  ### To Stop :
 
- Apache Tomcat --> bin --> Shutdown ( Windowsbatch file )
+ Apache Tomcat --> bin --> Shutdown ( Windows Batch File )
 
  ### For configuration Changes :
 
