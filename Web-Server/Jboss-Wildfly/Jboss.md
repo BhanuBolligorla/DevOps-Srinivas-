@@ -131,3 +131,10 @@ In wildfly deployed artifacts can have various status states including :
   (home --> Domain --> configuration --> host.xml)
 
   * Communicates with the domain controller to receive configuration updates and start/stop server instances.
+
+  ## Folder Structure os Standalone :
+   
+   * Configuration
+   * Deployments
+   * Logs
+   
