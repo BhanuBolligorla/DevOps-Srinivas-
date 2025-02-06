@@ -237,3 +237,67 @@ After completing the installation process , you have to unblock jenkins before y
  2. localhost:8080/Restart
 
  * go for safeRestart only.
+
+## Plugin Installation :
+  There are 2 ways to install the plugins.
+     
+1. Automatically
+2. Manually
+
+`1. Automatically :` Once you loogin into jenkins GUI left side you will see the option of mange jenkins 
+
+*  Click on manage jenkins in 1ST tab , there is a system configuration , under that select plugins
+* Next go to available plugins and search for the plugin which is required
+* select the plugin under the list, once select the plugin, install button is highlated ,
+* then click on install button.
+
+`2. Manually :` Under plugins tab go for available plugins and search for the plugin and click on the plugin which is required.
+
+* Once click on the plugin, new tab will open and click on releases
+* Under releases you will see the various versions of the plugins.
+* Go for the plugin which is required specific version.
+* Under Installation option there is text called direct link.
+* Once click on direct link , plugin will downloaded to our local machine.
+* When we download plugin in manual way , again we need to deploy it to jenkins.
+* In Jenkins , GUI plugins tab , click on advanced settings
+* There you can search for the choose file button to upload which is downloaded to local machine.
+
+## Plugins : 
+   Add , remove , disable or enable pluginsthat can extend the functionality of jenkins.
+
+* When we install plugin in automatic way, plugins extention is **JPI**  ( Jenkins Plugin)
+
+* When we install plugin in manual way, plugin extention is **HPI** (Hudson Plugin)
+
+## How to Uninstall the plugin ?
+ manage jenkins --> plugins --> installed plugins --> search plugin name which we wanted to uninstall select the plugin and then  uninstall button will be highlated , once clicked on uninstall , plugin will get uninstalled.
+
+ ## How to update the plugin ?
+   manage jenkins --> plugins --> updated
+
+* Select the plugin and then update button will be highlated, once clicked on update , plugin will get updated.
+* In real time , we should not update the plugin directly, reason being they may be a challanges encounted
+* It will be recommended to update the plugin in our local system where other team members will not affected if anything goes wrong.
+
+## How to create the users ?
+  manage jenkins --> security --> users
+
+### Users : ( Create / delete / modify users that can log into this jenkins)
+
+* Click on users, you will be seeing craete user option.
+* Click on create user , fill all the details and then click on create user .
+
+## How to give permission to the users ?
+  manage jenkins --> Security ( Secure jenkins define who is arrowed to access / use the system)
+  
+  * Click on that security , you will go to authorization page.
+  * Under that you will be seeing add user button
+  * Click on that add user button
+  * It will ask user ID and give userID and click ok button 
+  * After that you should see added user name
+  * Then give the permissionfor the users by checking the box (Minimun Access to give is overall Read)
+
+  `Note :` By default , what ever we create the users, will get stored in Jenkin's own user database.
+  
+  * Jenkin's own user database is suitable for smaller setup where you have no existing user datadata use where.
+  * Other option is **LDAP** ( Light Weight Directory Access Protocol)
