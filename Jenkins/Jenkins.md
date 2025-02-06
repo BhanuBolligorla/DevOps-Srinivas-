@@ -301,3 +301,8 @@ After completing the installation process , you have to unblock jenkins before y
   
   * Jenkin's own user database is suitable for smaller setup where you have no existing user datadata use where.
   * Other option is **LDAP** ( Light Weight Directory Access Protocol)
+
+  ## Authorization Stratergies :
+   * By default you can see project-based matrix authorization stratergy , with this we can manage the authorization based on the options available under stratergy.
+   
+   Eg: Credentials , Agent, Job, Run etc ...
