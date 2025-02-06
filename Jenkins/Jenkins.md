@@ -223,6 +223,10 @@ After completing the installation process , you have to unblock jenkins before y
 
    search --> services --> jenkins --> stop
 
+![preview](Images/jenkins.27.PNG)
+
+![preview](Images/jenkins.28.PNG)
+
 ## How to restart the jenkins :
  2 ways 
 
