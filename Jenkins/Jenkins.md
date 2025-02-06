@@ -306,3 +306,38 @@ After completing the installation process , you have to unblock jenkins before y
    * By default you can see project-based matrix authorization stratergy , with this we can manage the authorization based on the options available under stratergy.
    
    Eg: Credentials , Agent, Job, Run etc ...
+
+   ### Matrix  authorization stratergy :
+It allows configuring the lowest level permisiion such as starting new build , configuring items or deleting them , individually.
+
+## Jenkins projects ( Projects or jobs both are same )
+  It is a combination of one or more tasks.
+
+* Freestyle Project 
+* Maven Project
+* Pipeline
+* Multi - Configuration Project
+* Folder
+* Multi branch pipeline
+* Organization folder
+
+These are default things we will get after creating the project.
+
+**RBAC :** ( Role Based Access control ) one of the way where we can secure the jenkins
+
+## How to create the job or project :
+   In Jenkins GUI, you will see "+" new item on the left side 
+   
+   * Click on that new item , enter an item name then select an item type , once selected any of the item.
+   * Click ok button which will be highlated 
+   * Job configuration is consists of (Where we can give information / description about the project)
+   * Source code management where will be passing url's of the repositories
+   * Build triggers (In what way we wanted to trigger build that job), build environments , build step (where we can add tasks)
+   * Post build action
+
+## How to get free style job :
+  new item -> give job name /  item name -> select free style project -> ok
+ 
+ * Build steps (configuration) -> add build step dropdown --> select execute windows batch command --> type dir --> click on save
+
+* then click on build now & check for console output.
