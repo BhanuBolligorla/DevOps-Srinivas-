@@ -321,6 +321,9 @@ It allows configuring the lowest level permisiion such as starting new build , c
 * Multi branch pipeline
 * Organization folder
 
+![preview](Images/jenkins.29.PNG)
+![preview](Images/jenkins.30.PNG)
+
 These are default things we will get after creating the project.
 
 **RBAC :** ( Role Based Access control ) one of the way where we can secure the jenkins
