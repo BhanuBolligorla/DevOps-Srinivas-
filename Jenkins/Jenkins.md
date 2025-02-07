@@ -398,5 +398,5 @@ Ways to trigger the jenkins jobs :
 
 * setup a trigger so that when some other projects finish building, a new build is scheduled for this project.
 * This is convenient for running on extensive test after a build is complete.
-* We need to pass the job name (which are configured already  under projects to watch tab )
+* We need to pass the job name (which are configured already  under projects to watch tab)
 
