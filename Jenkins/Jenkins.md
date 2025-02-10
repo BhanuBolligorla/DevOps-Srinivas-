@@ -499,3 +499,8 @@ Ways to trigger the jenkins jobs :
 
 * In sample step of snippet generator , search for the echo, there is a step **echo:print message** then what message we need to print we have to pass it in message block then click on generate pipeline script, which will give us script to print message 
 * By default pipeline execution will work on serially (one by one), if the previous stage is passed then only it will go for next or further stages. 
+
+### How to create new item/job/project from existing jobs :
+  Click on new item --> give the job name --> select the item --> scroll down to bottom there you can see copy from --> in the copy from tab, we need to pass the existing job name which we want to make use of existing job configuration.
+
+  * **Eg:** Create job 10 (take the reference of job 8 configuration)
