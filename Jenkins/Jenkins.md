@@ -504,3 +504,101 @@ Ways to trigger the jenkins jobs :
   Click on new item --> give the job name --> select the item --> scroll down to bottom there you can see copy from --> in the copy from tab, we need to pass the existing job name which we want to make use of existing job configuration.
 
   * **Eg:** Create job 10 (take the reference of job 8 configuration)
+
+## How to change default port number of jenkins ?
+   go to the path
+      
+    C:\programfiles\Jenkins
+
+* In that folder find **jenkins.xml** file.
+* Search for **"--httpPort=8080"** jenkins.xml file where 8080 is the default port number.
+* In Order to change this default port number , we need to replace 8080 by required port number, then save it 
+* Once modified, restart the jenkins server.
+
+**Note:** Before changing any changes of jenkins configuration or port number , better make a backup of the original files for safer side.
+
+**Password Recovery for Jenkins Admin :**
+1. Go to Jenkins home directory:
+   
+        C:/ProgramData/Jenkins/.jenkins
+2. In that path, open `config.xml`, search for:
+
+      useSecurity> true </useSecurity
+
+3. Replace `true` with `false`.
+4. Save the file.
+5. Now, access the Jenkins server in a browser; login details will not be required.
+6. Go to `Manage Jenkins` → `Security`.
+   - `Security Realm` (When we change `config.xml` file from `true` to `false`, it will be set to `none`).
+   - Change from `none` to `Jenkins’ own user database`.
+7. Change `Authorization` settings:
+   - When `true` is set to `false`, the authorization will change to `Anyone can do anything`.
+   - Change from `Anyone can do anything` to either `Matrix-based` or `Project-based` strategy.
+8. Uncheck `Anonymous` under the `Users` category.
+9. Now, add a user and assign the `Administrator` role.
+10. Save the settings.
+11. Navigate to `Manage Jenkins` → `Users` → `Admin`, then change the admin user password.
+12. Restart the Jenkins server.
+   - **Note:** Better to take a backup of the `config.xml` file before proceeding.
+13. After restarting, check with the `Admin` user whether login with password and admin privileges works.
+14. Go back to `config.xml` and modify:
+   
+   useSecurity> false </useSecurity
+   
+   - Change `false` back to `true`.
+15. Restart the Jenkins server.
+
+Using Jenkins Environment Variables:
+-----------------------------------
+- Jenkins pipeline exposes environment variables via the global variable `env`, which is available from anywhere 
+within a `Jenkinsfile`.
+  - Reference:
+  
+         jenkins.io/doc/book/pipeline/jenkinsfile/#using-environment-variables
+
+### Common Jenkins Environment Variables:
+1. **BUILD_ID** - The current build ID, identical to **BUILD_NUMBER** for builds created.
+ Build Variables in Jenkins
+2. **BUILD_NUMBER**
+3. **BUILD_TAG**
+4. **BUILD_URL**
+5. **JENKINS_URL**
+6. **JOB_NAME**
+7. **NODE_NAME**
+8. **WORKSPACE**
+
+### Example Usage:
+- Use the **Jenkins Pipeline (Declarative Pipeline)**.
+- In the Jenkins URL, we can see example code or copy the code when creating a new item in Jenkins for a pipeline job.
+- Replace the script with copied code and save it.
+- Build the job.
+- **Expected Output:** Should be running on `http://localhost:8080`.
+- If the port number is changed from `8080` to another port, but Jenkins still shows `8080`, investigate 
+why it is retaining the default port.
+
+
+
+### How to Parameterize a Jenkins Job
+- **Parameters** allow you to prompt users for inputs that will be passed into a build.
+- To create a new job:
+  1. In the general configuration of the job, check the option **"This project is parameterized"**.
+  2. Click on the **"Add Parameter"** dropdown.
+  3. Various parameters available:
+     - Boolean
+     - Choice
+     - Credentials
+     - File
+     - Multi-line string
+     - Password
+     - Run
+     - String
+  4. Example:
+     - Click on **Choice Parameter**.
+     - Define a simple parameter that can be selected from a list during a build.
+     - Name it `Env` and provide multiple environment names as choices.
+     - Add a **Description** to inform users about the selection.
+  5. Click **Save**.
+  6. When triggering the job, select **"Build with Parameters"** and choose the configured options.
+  7. Click **Build**.
+
+
