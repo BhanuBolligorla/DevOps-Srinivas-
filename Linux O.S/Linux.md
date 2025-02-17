@@ -1,10 +1,47 @@
+### Operating System :
+We have few types of operating systems 
+
+* Linux
+* Windows
+* Mac
+* Android
+
+
+
+
+
+
+
+
+
+
+
+
 # `Linux :`
 
 ## What is Linux?
 Linux is an open-source operating system modeled on Unix and developed in the C language.
 
 * Linux first released on **Sep 17,1991 by LINUS TORVALDS**
+### Why do we learn Linux :
 
+* free
+* Stable
+* Secure
+* Open Source
+* In TV Remote,AC Remote, we are using Linux in real time
+* IOS is come from UNIX O.S that means type of Linux only.
+
+### Where we are using Linux ?
+* Super Computers
+* Embeded systems
+* Robotic O.S (ROS) 
+* Satellite Communication systems (NASA)
+* IOT (Internet of Things)
+* Flight simulators
+* Bitcoin and cryptocurrency mining
+
+* Advanced driver assistance systems (ADAS) 
 ## Features of Linux:
 
 * It is reliable as it runs smoothly and does not need to be rebooted repeatedly.
@@ -187,71 +224,48 @@ We can use these run levels with the init command.
 The Linux directory system is hierarchical and starts from the root directory. 
 * Below are the key directories and their purposes:
 
-   * ### / (Root Directory) :
+* ### / (Root Directory) :
    This is the top-level directory and the parent of all other directories.
 Represented by a forward slash (/).
-   * ### /root:
+* ### /root:
    Home directory for the root user (administrator).
 Provides the working environment for the root user.
-   * ### /home:
+* ### /home:
 Home directory for other users in Linux.
 Provides a working environment for non-root users.
-    * ###/bin:
+
+ * ### /bin :
 Contains essential binary commands used by all users (e.g., ls, cp, mv).
-    * ### /boot:
+* ### /boot:
 Contains the kernel, bootloader files, and boot configuration files.
 Holds files necessary for booting the operating system.
-/dev:
+* ### /dev:
 Contains device files (e.g., /dev/sda for disks, /dev/cdrom for CD-ROM).
 Similar to the Device Manager in Windows.
-/etc:
+* ### /etc:
 Contains system-level configuration files (e.g., /etc/passwd for user info, /etc/network/interfaces for network configuration).
-/usr:
+* ### /usr:
 Default directory for installing software applications.
 Contains user-installed programs and libraries.
-/sbin:
+* ### /sbin:
 Contains binary commands used only by the superuser (root).
 Examples include system administration commands.
-/var:
+* ### /var:
 Contains data that frequently changes while the system is operational.
 Includes log files, databases, and other files that change in size.
  
-Linux Directory Structure /mnt This directo... by Subhan Shaik Mohammed
-Subhan Shaik Mohammed
-Linux Directory Structure
-/mnt
+
+
+* ### /mnt :
 This directory is used to mount a filesystem temporarily. It is empty by default.
-/media
+* ### /media :
 Used by the system to automatically mount removable media such as CDs, DVDs, USB drives, and Zip drives. It contains all of the removable media like CD-ROM and pendrive.
-/lib
+* ### /lib :
 It contains library files that are used in the operating system. It is similar to DLL files in Windows. Library files in Linux are shared object files.
-/proc
+* ### /proc :
 It contains process files. Its contents are not permanent as they keep changing. It is also called a virtual directory. It contains useful information used by the OS, such as RAM, SWAP, and CPU details.
-/lib and /lib64
+* ### /lib and /lib64 :
 These directories hold libraries needed by programs, such as libc.so.6.
-/opt
+* ### /opt :
 This filesystem holds additional software installed on the system. A sub-directory is created for each installed software. It is an optional directory for users and contains third-party software.
-Root Directory Structure Diagram
-root
- |
- |-- home
- |-- usr
- |   |-- bin
- |   |-- local
- |   |-- sbin
- |   |-- include
- |-- etc
- |-- root
- |-- opt
- |-- lib
- |-- boot
- |-- bin
- |-- mnt
- |-- var
- |   |-- tmp
- |   |-- log
- |   |-- cache
- |   |-- spool
- |-- media
- |-- tmp
-has context menu
+
